@@ -154,6 +154,32 @@
             const cueWrong = ()=>beep(220,0.18,'sawtooth');
 
             const defaultText = `ALIBI
+ALPHA
+BRAVO
+CHARLIE
+DELTA
+ECHO
+FOXTROT
+GOLF
+HOTEL
+INDIA
+JULIETT
+KILO
+LIMA
+MIKE
+NOVEMBER
+OSCAR
+PAPA
+QUBEC
+ROMEO
+SIERRA
+TANGO
+UNIFORM
+VICTOR
+WISKY
+XRAY
+YANKEE
+ZULU
 ALLEY
 AMATEUR
 AMBULANCE
@@ -972,7 +998,7 @@ const { createRoot } = ReactDOM;
       ['922', 'Illegal peddling'],
       ['924', 'Station detail'],
       ['924-D', 'Station detail / desk'],
-      ['924-E', 'Food for prisoners'],
+      ['924-F', 'Food for prisoners'],
       ['924-R', 'Report writing'],
       ['925', 'Suspicious person'],
       ['925-C', 'Suspicious person in car'],
@@ -1041,6 +1067,28 @@ const { createRoot } = ReactDOM;
       ['Code Alex', 'Establish countywide LE observation checkpoint plan'],
       ['Code Charlie', 'Pre-planned LE mutual aid when emergency/riot anticipated (not yet requested)'],
       ['Code Charlie Checkmate', 'Actual mutual aid call for assistance'],
+
+      ['CVC 4000(a)(1)', 'Expired Registration'],
+      ['CVC 5200(a)', 'Two License Plates Required'],
+      ['CVC 12500(a)', 'Unlicensed Driver'],
+      ['CVC 14601.1(a)', 'Suspended License'],
+      ['CVC 16028(a)', 'Proof of Insurance'],
+      ['CVC 20001(a)', 'Felony/ Hit and Run'],
+      ['CVC 20002(a)', 'Misdemeanor/Hit and Run'],
+      ['CVC 21453(a)', 'Red Light Violation'],
+      ['CVC 22107', 'Unsafe Turn'],
+      ['CVC 22349(a)', 'Maximum Speed'],
+      ['CVC 22350', 'Basic Speed Law'],
+      ['CVC 22450(a)', 'Stop Sign'],
+      ['CVC 23103(a)', 'Reckless Driving'],
+      ['CVC 23109(a)', 'Speed Contest'],
+      ['CVC 23123(a)', 'Cell Phone; Use While Driving'],
+      ['CVC 23152(a)', 'Misdemeanor/DUI'],
+      ['CVC 23223(a)', 'Possession of Open Container in Vehicle'],
+      ['CVC 24252(a)', 'Required Lighting Equipment'],
+      ['CVC 24400(a)', 'Headlamps'],
+      ['CVC 26710', 'Windshield; Broken or Defective'],
+      
     ];
 
     function chunkInto(prefix, list, size = 10) {
@@ -1143,7 +1191,6 @@ const { createRoot } = ReactDOM;
       const INITIAL_SELECTED = React.useMemo(() => {
         const base = Object.fromEntries(ORDER.map((k) => [k, false]));
         base.set1 = true;
-        base.set2 = true;
         return base;
       }, []);
 
